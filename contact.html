@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattami</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="header-image.jpg" alt="Immagine Vichinga" class="header-img">
+        <h1>Contattami</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">Chi Sono</a> |
+            <a href="works.html">I Miei Lavori</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contattami</h2>
+            <p>Se hai un progetto in mente o desideri collaborare, scrivimi!</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Il tuo nome" required>
+                <input type="email" name="email" placeholder="La tua email" required>
+                <textarea name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Il Programmatore Vichingo. <a href="#">Torna su</a></p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Grazie per avermi contattato! Ti risponderò presto.');
+        });
+    </script>
+</body>
+</html>
